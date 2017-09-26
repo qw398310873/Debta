@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+		<title></title>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			#username{
+				display: inline;
+				width: 26%;
+			}
+			#check{
+				display: inline;
+				width: 10%;
+			}
+			#add{
+				display: inline;
+				width: 26%;
+				margin-bottom: 6px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oadd=document.getElementById('add');
+				oadd.onclick=function(){
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+		用户名：<input name="Name" type="text" class="form-control" id="username" placeholder="请输入要查询的用户名" autofocus>
+		<button class="btn btn-theme btn-block" id="check" type="submit">查询</button>
+		<button class="btn btn-theme btn-block" id="add" type="button"><a data-toggle="modal" href="manage.html#add1">添加账号</a></button>
+		<br>
+		<table border="1" width="100%" height="100%">
+			<th style="text-align:center" colspan="7">
+			账号管理	
+			</th>
+			<tb>
+				<tr>
+					<td>序号</td>
+					<td>账号</td>
+					<td>用户名</td>
+			        <td>密码</td>
+			        <td>权限</td>
+			        <td>修改操作</td>
+			        <td>删除操作</td>    
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>123</td>
+					<td>lishi</td>
+			        <td>123</td>
+			        <td>管理员</td>
+			        <td><a data-toggle="modal" href="manage.html#edi">修改</a></td>
+			        <td><a>删除</a></td>  
+				</tr>
+			</tb>
+		</table>
+		</div>
+		<!--add-->
+				<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="add1" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">添加账号</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                         	<p id="resstatus"></p>
+		            							账号：<input type="text" class="form-control" id="resusername" placeholder="请输入账号" autofocus>
+		            							<br>
+		            							用户名：<input type="text" class="form-control" id="resusername" placeholder="请输入用户名" autofocus>
+		            							<br>
+		            							密码：<input type="password" class="form-control" id="respassword1" placeholder="请输入密码"> 
+		            							<br>
+		            							权限：<select>
+		            								<option value="a">普通用户</option>		            						
+		            								<option value="a">管理员</option>
+		            								<option value="a">超级管理员</option>
+		            								
+		            							</select> 
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
+		                          <button class="btn btn-theme" type="button" id="res">提交</button>  
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>	
+							<!--add-->
+							<!--edi-->
+				<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="edi" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">添加账号</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                         	<p id="resstatus"></p>
+		            							账号：<input type="text" class="form-control" id="resusername" placeholder="请输入账号" autofocus>
+		            							<br>
+		            							用户名：<input type="text" class="form-control" id="resusername" placeholder="请输入用户名" autofocus>
+		            							<br>
+		            							密码：<input type="password" class="form-control" id="respassword1" placeholder="请输入密码"> 
+		            							<br>
+		            							权限：<select>
+		            								<option value="a">普通用户</option>		            						
+		            								<option value="a">管理员</option>
+		            								<option value="a">超级管理员</option>
+		            								
+		            							</select> 
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
+		                          <button class="btn btn-theme" type="button" id="res">提交</button>  
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>	
+							<!--edi-->
+	</body>
+</html>

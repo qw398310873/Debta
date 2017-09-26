@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				var opush=document.getElementById("push");
+				var ofile=document.getElementById("file");
+				opush.onclick=function(){
+					alert(ofile.files[0]);
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<input type="file" name="file" id="file" value="上传"/>
+		<button id="push">上传</button>
+	</body>
+</html>
